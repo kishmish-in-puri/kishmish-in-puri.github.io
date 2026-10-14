@@ -685,17 +685,20 @@ export default function App() {
                     <>
                       {/* NUMBER OF GUESTS */}
                       <div>
-                        <label className="block text-xs uppercase tracking-[0.15em] text-[#8F2438] mb-2 font-semibold">Number of Guests</label>
+                        <label htmlFor="guest-count" className="block text-xs uppercase tracking-[0.15em] text-[#8F2438] mb-2 font-semibold">Number of Guests</label>
                         <div className="relative">
                           <img src="/guest.svg" alt="guest" className="absolute left-3 top-3.5 w-5 h-5" />
-                          <select 
+                          <input
+                            id="guest-count"
+                            type="number"
+                            inputMode="numeric"
+                            min="1"
+                            step="1"
+                            required
                             value={rsvp.guestCount} 
                             onChange={e => setRsvp({ ...rsvp, guestCount: e.target.value })} 
-                            className="w-full pl-10 pr-4 py-2 border border-[#D9A441] rounded-lg bg-[#FFF4E3] text-[#8F2438] focus:outline-none focus:border-[#8F2438] transition-colors appearance-none cursor-pointer"
-                          >
-                            {[1,2,3,4,5].map(n => <option key={n} value={n}>{n} {n===1?'Guest':'Guests'}</option>)}
-                          </select>
-                          <span className="absolute right-3 top-3.5 pointer-events-none text-[#D9A441]">▼</span>
+                            className="w-full pl-10 pr-4 py-2 border border-[#D9A441] rounded-lg bg-[#FFF4E3] text-[#8F2438] focus:outline-none focus:border-[#8F2438] transition-colors"
+                          />
                         </div>
                       </div>
                     </>
