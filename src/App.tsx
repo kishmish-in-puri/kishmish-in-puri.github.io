@@ -771,7 +771,7 @@ export default function App() {
         <div className="max-w-md mx-auto space-y-2">
           <Heart className="w-4 h-4 text-[#d4af37] fill-[#d4af37] mx-auto" />
           <h3 className="text-2xl text-[#8b3a3a] font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>Amisha &amp; Sumeet</h3>
-          <p className="text-xs uppercase tracking-[0.12em] text-[#8b3a3a] font-medium">1st - 3rd December 2026 · Surat</p>
+          <p className="text-xs uppercase tracking-[0.12em] text-[#8b3a3a] font-medium">29th - 30th November 2026 · Puri</p>
           <p className="text-xs text-[#8b3a3a] opacity-70">Made with love for our family &amp; friends</p>
           <div className="flex items-center justify-center gap-5 pt-2 text-[#8F2438]" aria-label="Social media and contact icons">
             <Instagram className="w-4 h-4" aria-label="Instagram" />
