@@ -387,7 +387,7 @@ export default function App() {
           <a href="#home" className="sidebar-item" onClick={handleSectionNavigation('home')}>Home</a>
           <a href="#itinerary" className="sidebar-item" onClick={(event) => { event.preventDefault(); setShowItinerary(true); setShowExploreSurat(false); setShowTrip(false); setShowVenues(false); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Detailed Itinerary</a>
           <a href="#our-venues" className="sidebar-item" onClick={(event) => { event.preventDefault(); setShowItinerary(false); setShowExploreSurat(false); setShowTrip(false); setShowVenues(true); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Our Venues</a>
-          <a href="#explore-surat" className="sidebar-item" onClick={(event) => { event.preventDefault(); setShowItinerary(false); setShowExploreSurat(true); setShowTrip(false); setShowVenues(false); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Explore Surat</a>
+          <a href="#explore-surat" className="sidebar-item" onClick={(event) => { event.preventDefault(); setShowItinerary(false); setShowExploreSurat(true); setShowTrip(false); setShowVenues(false); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Explore Puri</a>
           <a href="#trip" className="sidebar-item" onClick={(event) => { event.preventDefault(); setShowItinerary(false); setShowExploreSurat(false); setShowTrip(true); setShowVenues(false); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Trip</a>
           <a href="#rsvp" className="sidebar-item" onClick={handleSectionNavigation('rsvp')}>RSVP</a>
         </nav>
@@ -497,7 +497,7 @@ export default function App() {
 
       {/* ─── SECTION 2 ─── */}
       <section id="story" style={{ position: 'relative', width: '100%', height: 'auto' }}>
-        <img src="/Section2.png" alt="A celebration of love, family, and wedding festivities" style={{ width: '100%', height: 'auto', display: 'block' }} />
+        <img src="/Section2.png?v=20261014" alt="A celebration of love, family, and wedding festivities" style={{ width: '100%', height: 'auto', display: 'block' }} />
         {[
           { event: 'Mehendi', top: '49.4%' },
           { event: 'Haldi', top: '63.3%' },
