@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes:wght@400;700&family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500&display=swap');
+
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: #fbe1be;
+  color: #3d2b1f;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-serif-alt {
+  font-family: 'EB Garamond', serif;
+}
+
+/* Watercolor texture background */
+.watercolor-bg {
+  background-color: #faf8f6;
+  background-image: 
+    radial-gradient(ellipse 800px 600px at 20% 30%, rgba(217, 168, 168, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 600px 500px at 80% 70%, rgba(232, 194, 194, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 900px 400px at 50% 100%, rgba(201, 169, 110, 0.04) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #d9a8a8;
+  color: #faf8f6;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9a8a8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c97885;
+}
