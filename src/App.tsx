@@ -698,28 +698,6 @@ export default function App() {
                           <span className="absolute right-3 top-3.5 pointer-events-none text-[#D9A441]">▼</span>
                         </div>
                       </div>
-
-                      {/* EVENTS CHECKBOXES */}
-                      <div>
-                        <label className="block text-xs uppercase tracking-[0.15em] text-[#8F2438] mb-3 font-semibold">Events You'll Attend</label>
-                        <div className="grid grid-cols-2 gap-3">
-                          {EVENTS.map((ev, idx) => {
-                            const iconFiles = ['mehandi.svg', 'haldi.svg', 'sangeet.svg', 'wedding.svg'];
-                            return (
-                              <label key={ev.id} className="flex items-center gap-2 p-2.5 border border-[#D9A441] rounded-lg bg-[#FFF4E3] cursor-pointer hover:border-[#E88D91] transition-colors">
-                                <input 
-                                  type="checkbox" 
-                                  checked={rsvp.events.includes(ev.id)} 
-                                  onChange={() => toggleEvent(ev.id)} 
-                                  className="accent-[#E88D91] w-4 h-4" 
-                                />
-                                <img src={`/${iconFiles[idx]}`} alt={ev.name} className="w-5 h-5" />
-                                <span className="text-xs text-[#8F2438] font-medium">{ev.name}</span>
-                              </label>
-                            );
-                          })}
-                        </div>
-                      </div>
                     </>
                   )}
 
